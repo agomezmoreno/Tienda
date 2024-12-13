@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <script src="index.js"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Añadir Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <!-- <img src="images/logo.png" alt="Logo Tienda"> -->
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Categorías</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="btn-login">Login</button>
+                <button class="btn-cart">Carrito</button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <img src="images/hero-bg.jpg" alt="Hero Background" class="hero-background">
+            <div class="hero-content">
+                <h1 class="hero-title">Tu estilo, tu elección</h1>
+                <p class="hero-description">Descubre las últimas tendencias en moda y crea tu propio estilo único con nuestra exclusiva colección</p>
+                <div class="hero-cta">
+                    <button class="hero-btn hero-btn-primary">Explorar Colección</button>
+                    <button class="hero-btn hero-btn-secondary">Más Información</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categorias-section">
+            <div class="categorias-container">
+                <h2 class="categorias-title">Explora nuestras categorías</h2>
+                <button class="categorias-nav prev" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="categorias">
+                    <!-- Las categorías se insertarán aquí desde JavaScript -->
+                </div>
+                <button class="categorias-nav next" aria-label="Siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="siguenos-section">
+            <div class="siguenos-content">
+                <h2>Únete a nuestra comunidad</h3>
+                <!-- <h2 class="siguenos-title">Únete a nuestra comunidad</h2> -->
+                <p class="siguenos-description">Descubre las últimas tendencias, ofertas exclusivas y contenido especial. Sé parte de nuestra historia.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="siguenos-image">
+                <!-- <img src="images/social-lifestyle.jpg" alt="Lifestyle"> -->
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">¿Quieres un 10% de descuento?</h2>
+                <p class="newsletter-description">Suscríbete a nuestro newsletter y recibe un código de descuento para tu primera compra</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="newsletter-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Suscribirme
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Añadir sección de productos (inicialmente oculta) -->
+        <section class="productos-grid">
+            <!-- Los productos se insertarán aquí desde JavaScript -->
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Preguntas Frecuentes</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Envíos y Entregas</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Devoluciones</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Seguimiento de Pedidos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Nosotros</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Sobre Nosotros</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Trabaja con Nosotros</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Responsabilidad Social</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Aviso Legal</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Política de Privacidad</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Términos y Condiciones</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i> Cookies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Métodos de Pago</h3>
+                    <div class="payment-icons">
+                        <div class="payment-icon"><i class="fab fa-cc-visa"></i></div>
+                        <div class="payment-icon"><i class="fab fa-cc-mastercard"></i></div>
+                        <div class="payment-icon"><i class="fab fa-cc-paypal"></i></div>
+                        <div class="payment-icon"><i class="fab fa-cc-apple-pay"></i></div>
+                        <div class="payment-icon"><i class="fab fa-google-pay"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p>&copy; 2024 Tu Tienda. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
